@@ -10,12 +10,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
   <!-- Шапка -->
   <header class="page-header">
-    <nav>
+    <nav class="container main-nav">
       <a href="./" class="logo-link">Web<span class="studio-top">Studio</span>
       </a>
       <ul class="site-nav list">
@@ -23,11 +24,11 @@
         <li class="site-nav-item"><a href="portfolio.html" target="_self" class="site-nav-link">Портфолио</a></li>
         <li class="site-nav-item"><a href="" class="site-nav-link">Контакты</a></li>
       </ul>
+      <ul class="header-contacts list">
+        <li class="item"><a href="mailto:imfo@devstudio.com" class="link">info@devstudio.com</a></li>
+        <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+      </ul>
     </nav>
-    <ul class="header-contacts list">
-      <li class="item"><a href="mailto:imfo@devstudio.com" class="link">info@devstudio.com</a></li>
-      <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-    </ul>
   </header>
   <main>
     <!-- Герой -->
@@ -36,44 +37,42 @@
       <button type="button" class="button">Заказать услугу</button>
     </section>
     <!-- Преимущества -->
-    <section class="section">
+    <section class="container">
       <h2 class="section-title">Наши преимущества</h2>
-      <ul class="list">
-        <li>
+      <ul class="section-list list">
+        <li class="section-item">
           <h3 class="section-sub-title">Внимание к деталям</h3>
           <p class="section-sub-title-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
-        <li>
+        <li class="section-item">
           <h3 class="section-sub-title">Пунктуальность</h3>
           <p class="section-sub-title-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
-        <li>
+        <li class="section-item">
           <h3 class="section-sub-title">Планирование</h3>
           <p class="section-sub-title-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
-        <li>
+        <li class="section-item">
           <h3 class="section-sub-title">Современные технологии</h3>
           <p class="section-sub-title-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
       </ul>
-    </section>
-    <!-- Чем занимаются -->
-    <section>
       <h2 class="section-title">Чем мы занимаемся</h2>
-      <ul class="list">
-        <li>
+      <ul class="section-list list">
+        <li class="section-item">
           <img src="./images/img.jpg" width="370" alt="keyboard">
         </li>
-        <li>
+        <li class="section-item">
           <img src="./images/img(1).jpg" width="370" alt="notebook">
         </li>
-        <li>
+        <li class="section-item">
           <img src="./images/img(2).jpg" width="370" alt="ipad">
         </li>
       </ul>
     </section>
     <!-- Команда -->
     <section>
+      <div class="container">
       <h2 class="section-title">Наша команда</h2>
       <ul class="team list">
         <li class="team-res">
@@ -97,10 +96,11 @@
           <p class="staff-position">UI Designer</p>
         </li>
       </ul>
+      </div>
     </section>
   </main>
   <!-- Футер -->
-  <footer class="footer">
+  <footer class="container footer">
     <a href="./" class="logo-link">Web<span class="studio-bottom">Studio</span>
     </a>
       <address>

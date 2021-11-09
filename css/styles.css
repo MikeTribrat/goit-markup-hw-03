@@ -35,6 +35,16 @@ a {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
 /* WebStudio */
 
 .logo-link {
@@ -42,19 +52,18 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
-
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
 
 .studio-top {
+  margin-right: 93px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
-
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
 
@@ -63,16 +72,38 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
-
   letter-spacing: 0.03em;
-
   color: var(--fifth-text-color);
   background-color: var(--secondary-bg-color);
 }
 
+/* main-nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* site-nav */
 
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item {
+  margin-right: 50px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 0;
+}
+
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -94,7 +125,38 @@ a {
 
 /* header-contacts */
 
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts .item {
+  margin-right: 0;
+}
+
+.header-contacts .item + .item {
+  margin-left: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team {
+  display: flex;
+}
+
+.section-list {
+  display: flex;
+}
+
 .header-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -155,7 +217,6 @@ a {
 
 .hero .button {
   color: var(--fifth-text-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -175,7 +236,14 @@ a {
 
 /* Преимущества */
 
+.section-item + .section-item {
+  margin-left: 30px;
+}
+
 .section-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -184,15 +252,17 @@ a {
 }
 
 .section-sub-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  /* identical to box height */
-
   color: var(--primary-text-color);
 }
 
 .section-sub-title-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -203,6 +273,10 @@ a {
 /* Team section */
 
 .team-res .staff-name {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -211,6 +285,10 @@ a {
 }
 
 .team-res .staff-position {
+  margin-top: 10px;
+  margin-bottom: 124px;
+
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -220,7 +298,14 @@ a {
 
 /* footer-contacts */
 
+.footer .logo-link {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 .footer-contacts .link {
+  margin-top: 9px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -249,4 +334,8 @@ a {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secodary-text-color);
+}
+
+.team-res + .team-res {
+  margin-left: 30px;
 }
