@@ -37,7 +37,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid tomato;
 }
 
 /* WebStudio */
@@ -69,6 +68,10 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--fifth-text-color);
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* main-nav */
@@ -146,6 +149,25 @@ ul {
   display: flex;
 }
 
+.filter {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-item {
+  margin-right: 8px;
+}
+.filter-item:last-child {
+  margin-right: 0;
+}
+
+.our-works,
+.our-adv {
+  display: none;
+}
+
 .header-contacts .link {
   display: block;
   padding-top: 32px;
@@ -171,6 +193,10 @@ ul {
 /* filter-menu */
 
 .filter .button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   background: var(--third-bg-color);
   border-radius: 4px;
 
@@ -379,8 +405,49 @@ ul {
   color: var(--secodary-text-color);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.gallery-item:nth-child(1n + 7) {
+  margin-bottom: 94px;
+}
+
+.gallery-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.gallery-name {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.gallery-title {
+  padding-top: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.gallery-text {
+  margin-top: 4px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
+
 .team-res + .team-res {
   margin-left: 30px;
+}
+
+img {
+  display: block;
 }
 
 h1,
