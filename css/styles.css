@@ -51,8 +51,6 @@ a {
 }
 
 .studio-top {
-  margin-right: 93px;
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -74,6 +72,12 @@ a {
   border-bottom: 1px solid #ececec;
 }
 
+/* header-nav */
+
+.header-nav {
+  display: flex;
+}
+
 /* main-nav */
 
 .main-nav {
@@ -86,6 +90,7 @@ a {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .site-nav-item {
@@ -135,44 +140,10 @@ a {
   margin-left: 50px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.team {
-  display: flex;
-}
-
-.section-list {
-  display: flex;
-}
-
-.filter {
-  display: flex;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-
-.filter-item {
-  margin-right: 8px;
-}
-.filter-item:last-child {
-  margin-right: 0;
-}
-
-.our-works,
-.our-adv {
-  display: none;
-}
-
 .header-contacts .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -190,9 +161,38 @@ ul {
   color: var(--third-text-color);
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-item {
+  margin-right: 8px;
+}
+.filter-item:last-child {
+  margin-right: 0;
+}
+
+.our-works,
+.our-adv {
+  display: none;
+}
+
 /* filter-menu */
 
 .filter .button {
+  border: transparent;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -230,7 +230,8 @@ ul {
   text-align: center;
 }
 
-.hero .athem {
+.hero .tagline {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -250,7 +251,6 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   background: var(--bg-color-effect);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
@@ -265,15 +265,17 @@ ul {
 
 /* Преимущества */
 
-.section-list {
-  margin-bottom: 94px;
+.section {
   margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.section-list {
+  display: flex;
 }
 
 .section-list-images {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 94px;
 }
 
 .section-item + .section-item {
@@ -281,6 +283,8 @@ ul {
 }
 
 .section-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -290,7 +294,7 @@ ul {
 
 .section-title-team {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -328,13 +332,13 @@ ul {
 }
 
 .team-res {
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-res .staff-name {
-  margin-top: 30px;
   margin-bottom: 0;
 
   text-align: center;
@@ -347,7 +351,6 @@ ul {
 
 .team-res .staff-position {
   margin-top: 10px;
-  margin-bottom: 30px;
 
   text-align: center;
   font-weight: 400;
@@ -359,18 +362,18 @@ ul {
 
 /* footer-contacts */
 
-.footer-contacts {
-  margin-top: 20px;
-  padding-bottom: 60px;
-}
-
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 
 .footer-contacts-item {
   margin-top: 9px;
+}
+
+.footer-contacts-item:first-child {
+  margin-top: 0px;
 }
 
 .footer-contacts .link {
@@ -385,6 +388,12 @@ ul {
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
   color: var(--fifth-text-color);
+}
+
+/* address */
+
+.address {
+  margin-top: 20px;
 }
 
 /* gallery styles */
@@ -416,7 +425,7 @@ ul {
 }
 
 .gallery-item:nth-child(1n + 7) {
-  margin-bottom: 94px;
+  margin-bottom: 0px;
 }
 
 .gallery-item:nth-child(3n + 1) {
@@ -427,19 +436,14 @@ ul {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-
-.gallery-title {
   padding-top: 20px;
-  margin-right: 24px;
-  margin-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .gallery-text {
   margin-top: 4px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 
 .team-res + .team-res {
@@ -448,6 +452,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 h1,
@@ -455,7 +460,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
+}
+
+.hr {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
