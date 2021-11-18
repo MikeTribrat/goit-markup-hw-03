@@ -27,10 +27,6 @@ a {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -184,9 +180,17 @@ ul {
   margin-right: 0;
 }
 
-.our-works,
-.our-adv {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* filter-menu */
@@ -224,7 +228,7 @@ ul {
 
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 
   background-color: var(--secondary-bg-color);
   text-align: center;
@@ -266,8 +270,12 @@ ul {
 /* Преимущества */
 
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-section {
+  padding-top: 0;
 }
 
 .section-list {
@@ -283,7 +291,6 @@ ul {
 }
 
 .section-title {
-  margin-top: 94px;
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -293,8 +300,7 @@ ul {
 }
 
 .section-title-team {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -322,10 +328,6 @@ ul {
 }
 
 /* Team section */
-
-.team {
-  padding-bottom: 94px;
-}
 
 .team-section {
   background-color: var(--third-bg-color);
@@ -372,10 +374,6 @@ ul {
   margin-top: 9px;
 }
 
-.footer-contacts-item:first-child {
-  margin-top: 0px;
-}
-
 .footer-contacts .link {
   font-style: normal;
   font-weight: 400;
@@ -383,6 +381,14 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
+}
+
+.footer-contacts .street {
+  color: var(--fifth-text-color);
+}
+
+.footer-contacts-item:first-child {
+  margin-top: 0px;
 }
 
 .footer-contacts .link:hover,
@@ -453,6 +459,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 h1,
